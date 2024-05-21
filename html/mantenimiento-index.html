@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gimnasio Universitario</title>
+    <link rel="stylesheet" href="../css/mantenimiento-styles.css">
+    <script defer src="../javascritps/mentenimiento-scripts.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo" >
+            <img  src="../imagenes/principal-img/Imagen2.png" alt="Logo">
+        </div>
+        <div class="social-media">
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="../imagenes/principal-img/facebook.png" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="../imagenes/principal-img/instagran.png" alt="Instagram">
+            </a>
+            <a href="https://www.twitter.com" target="_blank">
+                <img src="../imagenes/principal-img/x.png" alt="Twitter">
+            </a>
+        </div>
+        <nav>
+            <a href="../html/principal-index.html"><b>Inicio</b></a>
+            <a href="../html/clases-index.html"><b>Clases</b></a>  
+            <a href="../html/membresia-index.html"><b>Membresía</b></a>
+            <a href="../html/galeria-index.html"><b>Galeria</b></a>
+            <a href="../html/blogs-index.html"><b>Blog</b></a>
+            <div class="sidebar-icon" onclick="toggleSidebar()"><b>☰</b></div>
+        </nav>
+    </header>
+    <aside id="sidebar" class="sidebar">
+        <div class="close-btn" onclick="toggleSidebar()">×</div>
+        <div class="user-info">
+            <p>Nombre Apellido</p>
+            <p>correo@ejemplo.com</p>
+        </div>
+        <hr>
+        <a href="../html/perfil-index.html">Perfil</a>
+        <hr>
+        <a href="../html/inicio-index.html">Salir</a>
+    </aside>
+    <main>
+        <div class="support-maintenance">
+           <div class="Bienvenido">
+            <h1>Problemas y Mantenimiento</h1>
+            <p>Bienvenido al área de Problemas y Mantenimiento. Aquí puedes encontrar información 
+                y soluciones para problemas técnicos, así como solicitar ayuda adicional si es 
+                necesario.</p>
+           </div>
+            
+           <hr>
+
+            <div class="problemas">
+            <h2>Reportar un Problema</h2>
+            <form id="report-form" action="#">
+                <label for="issue">Descripción del Problema:</label><br>
+                <textarea placeholder="Escribe aqui la descripcion del problema" id="issue" name="issue" rows="10" cols="100" ></textarea><br>
+                <button type="submit">Enviar Reporte</button>
+            </form>
+        </div>
+            
+            <hr>
+
+            <h2>Preguntas Frecuentes</h2>
+            <div class="faq">
+                <div class="question-answer">
+                    <div class="question">
+                        <h3>¿Cómo restablecer mi contraseña?</h3>
+                    </div>
+                    <div class="answer">
+                        <p>Para restablecer tu contraseña, ve a la página de inicio de sesión y haz clic en "¿Olvidaste tu contraseña?".</p>
+                    </div>
+                </div>
+                    
+                    <div class="a2">
+                        <h3>¿Cómo actualizar mi información de contacto?</h3>
+                        <p>Puedes actualizar tu información de contacto en la sección de ajustes de tu perfil.</p>
+                    </div>
+
+                    <div class="a3">
+                        <h3>¿Cómo puedo cancelar mi membresía?</h3>
+                        <p>Para cancelar tu membresía, visita la sección de "Ajustes" en tu perfil y sigue las instrucciones para cancelar tu suscripción.</p>
+                    </div>
+
+                    <div class="a4">
+                        <h3>¿Cómo puedo obtener una factura de mis pagos?</h3>
+                        <p>Para obtener una factura de tus pagos, ve a la sección de "Historial de Pagos" en tu perfil y busca la opción para descargar o imprimir tu factura.</p>
+                    </div>
+
+                    <div class="a5">
+                        <h3>¿Cómo puedo reservar una clase?</h3>
+                        <p>Para reservar una clase, inicia sesión en tu cuenta y visita la sección de "Clases". Desde allí, podrás ver el calendario de clases y seleccionar la que deseas reservar.</p>
+                    </div>
+                    
+                    <div class="a6">
+                        <h3>¿Qué debo hacer si no puedo acceder a mi cuenta?</h3>
+                        <p>Si tienes problemas para acceder a tu cuenta, primero intenta restablecer tu contraseña. Si aún así no puedes acceder, comunícate con nuestro equipo de soporte para obtener ayuda adicional.</p>
+                    </div>
+
+                    <div class="a7">
+                        <h3>¿Puedo compartir mi membresía con otras personas?</h3>
+                        <p>Las membresías son personales y no se pueden compartir con otras personas. Cada usuario debe tener su propia cuenta y membresía.</p>
+                    </div>
+                
+            </div>
+        </div>
+    </main>
+
+    
+    <footer>
+        <nav class="footer-nav">
+            <a href="#terminos">Términos y Condiciones</a>
+            <a href="#privacidad">Política de Privacidad</a>
+        </nav>
+        <div class="contacto">
+            <p>Gimnasio Universitario</p>
+            <p>Dirección: Calle Falsa 123</p>
+            <p>Teléfono: 555-1234</p>
+            <p>Email: info@gimnasio.com</p>
+        </div>
+    </footer>
+</body>
+</html>

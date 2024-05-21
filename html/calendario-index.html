@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gimnasio Universitario</title>
+    <link rel="stylesheet" href="../css/calendario-styles.css">
+    <script defer src="../javascritps/calendario-scripts.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo" >
+            <img  src="../imagenes/principal-img/Imagen2.png" alt="Logo">
+        </div>
+        <div class="social-media">
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="../imagenes/principal-img/facebook.png" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="../imagenes/principal-img/instagran.png" alt="Instagram">
+            </a>
+            <a href="https://www.twitter.com" target="_blank">
+                <img src="../imagenes/principal-img/x.png" alt="Twitter">
+            </a>
+        </div>
+        <nav>
+            <a href="../html/principal-index.html"><b>Inicio</b></a>
+            <a href="../html/clases-index.html"><b>Clases</b></a>  
+            <a href="../html/membresia-index.html"><b>Membresía</b></a>
+            <a href="../html/galeria-index.html"><b>Galeria</b></a>
+            <a href="../html/blogs-index.html"><b>Blog</b></a>
+            <div class="sidebar-icon" onclick="toggleSidebar()"><b>☰</b></div>
+        </nav>
+    </header>
+    <aside id="sidebar" class="sidebar">
+        <div class="close-btn" onclick="toggleSidebar()">×</div>
+        <div class="user-info">
+            <p>Nombre Apellido</p>
+            <p>correo@ejemplo.com</p>
+        </div>
+        <hr>
+        <a href="../html/perfil-index.html">Perfil</a>>
+        <hr>
+        <a href="../html/inicio-index.html">Salir</a>
+    </aside>
+    <main>
+        <div class="calendar-header">
+            <h2>Calendario Personal</h2>
+            <p>Aquí puedes agregar y eliminar elementos según tu preferencia.</p>
+        </div>
+        <div class="calendar-container">
+            <div class="calendar-controls">
+                <button onclick="prevMonth()">Anterior</button>
+                <span id="current-month-year"></span>
+                <button onclick="nextMonth()">Siguiente</button>
+            </div>
+            <div class="calendar" id="calendar">
+                <!-- Calendario dinámico -->
+            </div>
+        </div>
+        <div class="event-details">
+            <h3>Detalles del Evento</h3>
+            <form id="event-form">
+                <input type="text" id="event-name" name="event-name" placeholder="Nombre del evento" required>
+                <input type="datetime-local" id="event-datetime" name="event-datetime" required>
+                <textarea id="event-description" name="event-description" placeholder="Descripción del evento" required></textarea>
+                <button type="submit">Añadir Evento</button>
+            </form>
+            <ul id="event-list">
+                <!-- Lista de eventos -->
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <nav class="footer-nav">
+            <a href="#terminos">Términos y Condiciones</a>
+            <a href="#privacidad">Política de Privacidad</a>
+        </nav>
+        <div class="contacto">
+            <p>Gimnasio Universitario</p>
+            <p>Dirección: Calle Falsa 123</p>
+            <p>Teléfono: 555-1234</p>
+            <p>Email: info@gimnasio.com</p>
+        </div>
+    </footer>
+</body>
+</html>

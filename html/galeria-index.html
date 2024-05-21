@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gimnasio Universitario</title>
+    <link rel="stylesheet" href="../css/galeria-styles.css">
+    <script defer src="../javascritps/galeria-scripts.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo" >
+            <img  src="../imagenes/principal-img/Imagen2.png" alt="Logo">
+        </div>
+        <div class="social-media">
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="../imagenes/principal-img/facebook.png" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="../imagenes/principal-img/instagran.png" alt="Instagram">
+            </a>
+            <a href="https://www.twitter.com" target="_blank">
+                <img src="../imagenes/principal-img/x.png" alt="Twitter">
+            </a>
+        </div>
+        <nav>
+            <a href="../html/principal-index.html"><b>Inicio</b></a>
+            <a href="../html/clases-index.html"><b>Clases</b></a>  
+            <a href="../html/membresia-index.html"><b>Membresía</b></a>
+            <a href="../html/galeria-index.html"><b>Galeria</b></a>
+            <a href="../html/blogs-index.html"><b>Blog</b></a>
+            <div class="sidebar-icon" onclick="toggleSidebar()"><b>☰</b></div>
+        </nav>
+    </header>
+    <aside id="sidebar" class="sidebar">
+        <div class="close-btn" onclick="toggleSidebar()">×</div>
+        <div class="user-info">
+            <p>Nombre Apellido</p>
+            <p>correo@ejemplo.com</p>
+        </div>
+        <hr>
+        <a href="../html/perfil-index.html">Perfil</a>
+        <hr>
+        <a href="../html/inicio-index.html">Salir</a>
+    </aside>
+    <main>
+        <div class="gallery-header">
+            <h2>Bienvenido a la Galería del Gimnasio</h2>
+            <p>Encuentra a continuación algunas imágenes destacadas de nuestras instalaciones y actividades.</p>
+        </div>
+        <div class="gallery-container">
+            <!-- Generar imágenes de ejemplo con títulos -->
+            <figure class="gallery-item">
+                    <img src="../imagenes/galeria-img/pesas.jpg" alt="Zona de pesas" onclick="openModal(this)">
+                    <figcaption>Zona de pesas</figcaption>
+            </figure>
+            <figure class="gallery-item">
+                <img src="../imagenes/galeria-img/cardio.jpg" alt="Área de cardio" onclick="openModal(this)">
+                <figcaption>Área de cardio</figcaption>
+            </figure>
+            <figure class="gallery-item">
+                <img src="../imagenes/galeria-img/yoga.jpg" alt="Sala de yoga" onclick="openModal(this)">
+                <figcaption>Sala de yoga</figcaption>
+            </figure>
+            <figure class="gallery-item">
+                <img src="../imagenes/galeria-img/pilates.jpg" alt="Sala de pilates" onclick="openModal(this)">
+                <figcaption>Sala de pilates</figcaption>
+            </figure>
+            <figure class="gallery-item">
+                <img src="../imagenes/galeria-img/pesomuerto.jpeg" alt="Area de peso muerto" onclick="openModal(this)">
+                <figcaption>Area de peso muerto</figcaption>
+            </figure>
+            <figure class="gallery-item">
+                <img src="../imagenes/galeria-img/estiramiento.jpeg" alt="Área de estiramiento" onclick="openModal(this)">
+                <figcaption>Área de estiramiento</figcaption>
+            </figure>
+            <figure class="gallery-item">
+                <img src="../imagenes/galeria-img/piscina.jpg" alt="Piscina" onclick="openModal(this)">
+                <figcaption>Piscina</figcaption>
+            </figure>
+            <figure class="gallery-item">
+                <img src="../imagenes/galeria-img/meditacion.jpg" alt="Sala de meditacion" onclick="openModal(this)">
+                <figcaption>Sala de meditacion</figcaption>
+            </figure>
+            <figure class="gallery-item">
+                <img src="../imagenes/galeria-img/baile.png" alt="Sala de baile terapia" onclick="openModal(this)">
+                <figcaption>Sala de baile terapia</figcaption>
+            </figure>
+            <figure class="gallery-item">
+                <img src="../imagenes/galeria-img/ciclismo.jpg" alt="Zona de bicicletas" onclick="openModal(this)">
+                <figcaption>Zona de bicicletas</figcaption>
+            </figure>
+            <figure class="gallery-item">
+                <img src="../imagenes/galeria-img/press.jpg" alt="Zona de press de banca" onclick="openModal(this)">
+                <figcaption>Zona de press de banca</figcaption>
+            </figure>
+            <figure class="gallery-item">
+                <img src="../imagenes/galeria-img/barra.jpg" alt="Zona de barras" onclick="openModal(this)">
+                <figcaption>Zona de barras</figcaption>
+            </figure>
+            <figure class="gallery-item">
+                <img src="../imagenes/galeria-img/gluteo.jpg" alt="Área de glúteos" onclick="openModal(this)">
+                <figcaption>Área de glúteos</figcaption>
+            </figure>
+            <figure class="gallery-item">
+                <img src="../imagenes/galeria-img/piernas.jpg" alt="Zona de piernas" onclick="openModal(this)">
+                <figcaption>Zona de piernas</figcaption>
+            </figure>
+            <figure class="gallery-item">
+                <img src="../imagenes/galeria-img/flexiones.jpg" alt="Área de flexiones" onclick="openModal(this)">
+                <figcaption>Área de flexiones</figcaption>
+            </figure>
+            <figure class="gallery-item">
+                <img src="../imagenes/galeria-img/recepcion.jpg" alt="Recepción" onclick="openModal(this)">
+                <figcaption>Recepción</figcaption>
+            </figure>
+            <figure class="gallery-item">
+                <img src="../imagenes/galeria-img/vestuarios.jpg" alt="Vestuarios" onclick="openModal(this)">
+                <figcaption>Vestuarios</figcaption>
+            </figure>
+            <figure class="gallery-item">
+                <img src="../imagenes/galeria-img/sauna.jpg" alt="sauna" onclick="openModal(this)">
+                <figcaption>sauna</figcaption>
+            </figure>
+            <figure class="gallery-item">
+                <img src="../imagenes/galeria-img/baños.jpg" alt="baños" onclick="openModal(this)">
+                <figcaption>baños</figcaption>
+            </figure>
+        </div>
+    
+        <!-- Modal para imágenes -->
+        <div id="modal" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img class="modal-content" id="modal-img">
+            <div id="modal-caption"></div>
+        </div>
+    </main>
+    
+    
+    
+    
+    
+    
+    <footer>
+        <nav class="footer-nav">
+            <a href="#terminos">Términos y Condiciones</a>
+            <a href="#privacidad">Política de Privacidad</a>
+        </nav>
+        <div class="contacto">
+            <p>Gimnasio Universitario</p>
+            <p>Dirección: Calle Falsa 123</p>
+            <p>Teléfono: 555-1234</p>
+            <p>Email: info@gimnasio.com</p>
+        </div>
+    </footer>
+</body>
+</html>

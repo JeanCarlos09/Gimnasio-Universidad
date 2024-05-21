@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+     <!-- Establece la codificación de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Hace que la página sea responsiva, ajustando el ancho a la pantalla del dispositivo -->
+    <title>Membresía - Gimnasio Universitario</title>
+    <!-- Título de la página que aparece en la pestaña del navegador -->
+    <link rel="stylesheet" href="../css/membresia-styles.css">
+     <!-- Enlace al archivo de estilos CSS -->
+    <script defer src="../javascritps/membresia-scripts.js"></script>
+    <!-- Enlace al archivo JavaScript, diferido para que se cargue después del HTML -->
+</head>
+<body>
+    <!-- Cuerpo del documento -->
+    <header>
+        <!-- Encabezado de la página -->
+        <div class="logo">
+            <img src="../imagenes/principal-img/Imagen2.png" alt="Logo">
+            <!-- Logo del gimnasio -->
+        </div>
+        <div class="social-media">
+            <!-- Sección para iconos de redes sociales -->
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="../imagenes/principal-img/facebook.png" alt="Facebook">
+                <!-- Enlace a Facebook -->
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="../imagenes/principal-img/instagran.png" alt="Instagram">
+                <!-- Enlace a Instagram -->
+            </a>
+            <a href="https://www.twitter.com" target="_blank">
+                <img src="../imagenes/principal-img/x.png" alt="Twitter">
+                <!-- Enlace a Twitter -->
+            </a>
+        </div>
+        <nav>
+            <!-- Navegación principal -->
+            <a href="../html/principal-index.html"><b>Inicio</b></a>
+            <!-- Enlace a la página de inicio -->
+            <a href="../html/clases-index.html"><b>Clases</b></a>
+            <!-- Enlace a la página de clases -->
+            <a href="../html/membresia-index.html"><b>Membresía</b></a>
+            <!-- Enlace a la página de membresía -->
+            <a href="../html/galeria-index.html"><b>Galeria</b></a>
+            <!-- Enlace a la galería -->
+            <a href="../html/blogs-index.html"><b>Blog</b></a>
+            <!-- Enlace al blog -->
+            <div class="sidebar-icon" onclick="toggleSidebar()"><b>☰</b></div>
+            <!-- Icono para abrir la barra lateral, llama a la función toggleSidebar() -->
+        </nav>
+    </header>
+    <aside id="sidebar" class="sidebar">
+        <!-- Barra lateral oculta -->
+        <div class="close-btn" onclick="toggleSidebar()">×</div>
+        <!-- Botón para cerrar la barra lateral -->
+        <div class="user-info">
+            <!-- Información del usuario -->
+            <p>Nombre Apellido</p>
+            <!-- Nombre del usuario -->
+            <p>correo@ejemplo.com</p>
+            <!-- Correo electrónico del usuario -->
+        </div>
+        <hr>
+        <!-- Línea horizontal -->
+        <a href="../html/perfil-index.html">Perfil</a>
+        <!-- Enlace a la página de perfil -->
+        <hr>
+        <a href="../html/inicio-index.html">Salir</a>
+        <!-- Enlace para salir (cerrar sesión) -->
+    </aside>
+     <!-- Contenedor de información general -->
+     <div class="info-container">
+        <!-- Título de la sección -->
+        <h2 class="section-title">Información General</h2>
+        <!-- Contenedor de información específica -->
+        <div class="general-info">
+            <!-- Párrafo con el estado de la membresía -->
+            <p>Estado de la membresía: Inactiva</p>
+            <!-- Párrafo con el tipo de membresía -->
+            <p>Tipo de membresía: Nada</p>
+            <!-- Párrafo con las fechas de inicio y vencimiento de la membresía -->
+            <p>Fecha de inicio y fecha de vencimiento de la membresía: Nada</p>
+        </div>
+    </div>
+    <!-- Separador horizontal -->
+    <hr class="divider">
+    <!-- Contenedor de botones -->
+    <div class="buttons-container">
+        <!-- Botón para renovar la membresía -->
+        <button class="renew-button">Renovar Membresía</button>
+        <!-- Botón para cancelar la membresía -->
+        <button class="cancel-button">Cancelar Membresía</button>
+    </div>
+        <!-- Separador horizontal -->
+    <hr class="divider">
+
+    <!-- Contenedor de los planes de membresía -->
+    <div class="plans">
+        <!-- Título de la sección -->
+        <h2 class="section-title">Planes de Membresía</h2>
+        
+        <!-- Contenedor de las tarjetas de planes -->
+        <div class="plan-cards">
+            <!-- Tarjeta del plan por Día -->
+            <div class="plan-card">
+                <!-- Imagen representativa del plan por Día -->
+                <img src="../imagenes/membresia-img/DIA.png" alt="Plan por Día">
+                <!-- Botón para comprar el plan por Día, con evento onclick -->
+                <button onclick="comprar('day')">Comprar</button>
+            </div>
+
+            <!-- Tarjeta del plan Mensual -->
+            <div class="plan-card">
+                <!-- Imagen representativa del plan Mensual -->
+                <img src="../imagenes/membresia-img/mensual.png" alt="Plan Mensual">
+                <!-- Botón para comprar el plan Mensual, con evento onclick -->
+                <button onclick="comprar('month')">Comprar</button>
+            </div>
+
+            <!-- Tarjeta del plan Trimestral -->
+            <div class="plan-card">
+                <!-- Imagen representativa del plan Trimestral -->
+                <img src="../imagenes/membresia-img/trimestral.png" alt="Plan Trimestral">
+                <!-- Botón para comprar el plan Trimestral, con evento onclick -->
+                <button onclick="comprar('quarter')">Comprar</button>
+            </div>
+
+            <!-- Tarjeta del plan Semestral -->
+            <div class="plan-card">
+                <!-- Imagen representativa del plan Semestral -->
+                <img src="../imagenes/membresia-img/semestral.png" alt="Plan Semestral">
+                <!-- Botón para comprar el plan Semestral, con evento onclick -->
+                <button onclick="comprar('semester')">Comprar</button>
+            </div>
+
+            <!-- Tarjeta del plan Anual -->
+            <div class="plan-card">
+                <!-- Imagen representativa del plan Anual -->
+                <img src="../imagenes/membresia-img/anual.png" alt="Plan Anual">
+                <!-- Botón para comprar el plan Anual, con evento onclick -->
+                <button onclick="comprar('year')">Comprar</button>
+            </div>
+        </div>
+    </div>
+            <!-- Separador horizontal -->
+    <hr class="divider">
+
+    <!-- Contenedor de los planes combinados -->
+    <div class="combined-plans">
+        <!-- Título de la sección -->
+        <h2 class="section-title">Beneficios de la Membresía</h2>
+        
+        <!-- Contenedor de los beneficios -->
+        <div class="benefits">
+            <!-- Contenedor de un beneficio específico -->
+            <div class="benefit">
+                <!-- Título del beneficio: Membresía por Día -->
+                <h3>Membresía por Día</h3>
+                
+                <!-- Contenido del beneficio -->
+                <div class="benefit-content">
+                    <!-- Imagen representativa de la membresía por día -->
+                    <img src="../imagenes/membresia-img/DIA.png" alt="Membresía por Día">
+                    
+                    <!-- Lista de beneficios específicos de la membresía por día -->
+                    <ul>
+                        <!-- Elemento de lista con el primer beneficio -->
+                        <li><b>- Acceso Ilimitado a Equipos de Gimnasio:</b> Utiliza todos los equipos de gimnasio sin restricciones durante el día de tu membresía.</li>
+                        <!-- Elemento de lista con el segundo beneficio -->
+                        <li><b>- Sin acceso a inscribirse a clases Grupales:</b> La membresía diaria no incluye la opción de inscribirse en las clases grupales del gimnasio.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                                <!-- Contenedor de un beneficio específico -->
+                <div class="benefit">
+                    <!-- Título del beneficio: Membresía por Mes -->
+                    <h3>Membresía por Mes</h3>
+                    
+                    <!-- Contenido del beneficio -->
+                    <div class="benefit-content">
+                        <!-- Imagen representativa de la membresía por mes -->
+                        <img src="../imagenes/membresia-img/mensual.png" alt="Membresía por Mes">
+                        
+                        <!-- Lista de beneficios específicos de la membresía por mes -->
+                        <ul>
+                            <!-- Elemento de lista con el primer beneficio -->
+                            <li><b>- Acceso Ilimitado a Equipos de Gimnasio:</b> Acceso completo a todos los equipos y máquinas de gimnasio durante el mes.</li>
+                            <!-- Elemento de lista con el segundo beneficio -->
+                            <li><b>- Acceso a inscribirse a Clases Grupales:</b> Participa en todas las clases grupales ofrecidas, como yoga, spinning, y más.</li>
+                            <!-- Elemento de lista con el tercer beneficio -->
+                            <li><b>- Uso de la Piscina y Sauna:</b> Disfruta del uso ilimitado de la piscina y las instalaciones de sauna durante todo el mes.</li>
+                            <!-- Elemento de lista con el cuarto beneficio -->
+                            <li><b>- Descuento en Eventos Especiales (5%):</b> Recibe un 5% de descuento en todos los eventos especiales organizados por el gimnasio, como talleres y seminarios.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Contenedor de un beneficio específico -->
+                <div class="benefit">
+                    <!-- Título del beneficio: Membresía Trimestral -->
+                    <h3>Membresía Trimestral</h3>
+                    
+                    <!-- Contenido del beneficio -->
+                    <div class="benefit-content">
+                        <!-- Imagen representativa de la membresía trimestral -->
+                        <img src="../imagenes/membresia-img/trimestral.png" alt="Membresía Trimestral">
+                        
+                        <!-- Lista de beneficios específicos de la membresía trimestral -->
+                        <ul>
+                            <!-- Elemento de lista con el primer beneficio -->
+                            <li><b>- Acceso Ilimitado a Equipos de Gimnasio:</b> Uso ilimitado de todos los equipos de gimnasio durante tres meses.</li>
+                            <!-- Elemento de lista con el segundo beneficio -->
+                            <li><b>- Acceso a inscribirse a Clases Grupales:</b> Participa en todas las clases grupales sin costo adicional.</li>
+                            <!-- Elemento de lista con el tercer beneficio -->
+                            <li><b>- Uso de la Piscina y Sauna:</b> Acceso libre a la piscina y sauna durante todo el trimestre.</li>
+                            <!-- Elemento de lista con el cuarto beneficio -->
+                            <li><b>- Descuento en Eventos Especiales (10%):</b> Disfruta de un 10% de descuento en eventos especiales organizados por el gimnasio.</li>
+                            <!-- Elemento de lista con el quinto beneficio -->
+                            <li><b>- Una Sesión Gratuita con un Entrenador Personal:</b> Recibe una sesión de entrenamiento personalizado gratuita para ayudarte a alcanzar tus metas de fitness.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Contenedor de un beneficio específico -->
+                <div class="benefit">
+                    <!-- Título del beneficio: Membresía Semestral -->
+                    <h3>Membresía Semestral</h3>
+                    
+                    <!-- Contenido del beneficio -->
+                    <div class="benefit-content">
+                        <!-- Imagen representativa de la membresía semestral -->
+                        <img src="../imagenes/membresia-img/semestral.png" alt="Membresía Semestral">
+                        
+                        <!-- Lista de beneficios específicos de la membresía semestral -->
+                        <ul>
+                            <!-- Elemento de lista con el primer beneficio -->
+                            <li><b>- Acceso Ilimitado a Equipos de Gimnasio:</b> Uso sin restricciones de todos los equipos y máquinas del gimnasio durante seis meses.</li>
+                            <!-- Elemento de lista con el segundo beneficio -->
+                            <li><b>- Acceso a inscribirse a Clases Grupales:</b> Acceso completo a todas las clases grupales.</li>
+                            <!-- Elemento de lista con el tercer beneficio -->
+                            <li><b>- Uso de la Piscina y Sauna:</b> Disfruta de la piscina y sauna sin límites durante el semestre.</li>
+                            <!-- Elemento de lista con el cuarto beneficio -->
+                            <li><b>- Descuento en Eventos Especiales (15%):</b> Obtén un 15% de descuento en todos los eventos especiales.</li>
+                            <!-- Elemento de lista con el quinto beneficio -->
+                            <li><b>- Tres Sesiones Gratuitas con un Entrenador Personal:</b> Aprovecha tres sesiones de entrenamiento personal gratuitas.</li>
+                            <!-- Elemento de lista con el sexto beneficio -->
+                            <li><b>- Acceso Prioritario a Nuevas Clases:</b> Inscríbete primero en nuevas clases y actividades antes de que se abran al público general.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Contenedor de un beneficio específico -->
+                <div class="benefit">
+                    <!-- Título del beneficio: Membresía Anual -->
+                    <h3>Membresía Anual</h3>
+                    
+                    <!-- Contenido del beneficio -->
+                    <div class="benefit-content">
+                        <!-- Imagen representativa de la membresía anual -->
+                        <img src="../imagenes/membresia-img/anual.png" alt="Membresía Anual">
+                        
+                        <!-- Lista de beneficios específicos de la membresía anual -->
+                        <ul>
+                            <!-- Elemento de lista con el primer beneficio -->
+                            <li><b>- Acceso Ilimitado a Equipos de Gimnasio:</b> Acceso completo y sin restricciones a todas las instalaciones y equipos del gimnasio durante un año entero.</li>
+                            <!-- Elemento de lista con el segundo beneficio -->
+                            <li><b>- Acceso a inscribirse a Clases Grupales:</b> Participa en cualquier clase grupal que desees sin costo adicional durante el año.</li>
+                            <!-- Elemento de lista con el tercer beneficio -->
+                            <li><b>- Uso de la Piscina y Sauna:</b> Utiliza la piscina y las instalaciones de sauna sin límites durante todo el año.</li>
+                            <!-- Elemento de lista con el cuarto beneficio -->
+                            <li><b>- Descuento en Eventos Especiales (20%):</b> Recibe un 20% de descuento en todos los eventos especiales organizados por el gimnasio.</li>
+                            <!-- Elemento de lista con el quinto beneficio -->
+                            <li><b>- Seis Sesiones Gratuitas con un Entrenador Personal:</b> Aprovecha seis sesiones de entrenamiento personal sin costo adicional.</li>
+                            <!-- Elemento de lista con el sexto beneficio -->
+                            <li><b>- Acceso Prioritario a Nuevas Clases:</b> Inscríbete primero en nuevas clases y actividades antes de que se abran al público general.</li>
+                            <!-- Elemento de lista con el séptimo beneficio -->
+                            <li><b>- Descuento del 10% en Productos de la Tienda del Gimnasio:</b> Obtén un 10% de descuento en todos los productos de la tienda del gimnasio, incluyendo ropa deportiva, suplementos, y accesorios de fitness.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <!-- Pie de página -->
+        <nav class="footer-nav">
+            <!-- Navegación en el pie de página -->
+            <a href="#terminos">Términos y Condiciones</a>
+            <!-- Enlace a términos y condiciones -->
+            <a href="#privacidad">Política de Privacidad</a>
+            <!-- Enlace a política de privacidad -->
+        </nav>
+        <div class="contacto">
+            <!-- Información de contacto -->
+            <p>Gimnasio Universitario</p>
+            <!-- Nombre del gimnasio -->
+            <p>Dirección: Calle Falsa 123</p>
+            <!-- Dirección del gimnasio -->
+            <p>Teléfono: 555-1234</p>
+            <!-- Teléfono de contacto -->
+            <p>Email: info@gimnasio.com</p>
+            <!-- Correo electrónico de contacto -->
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,268 @@
+body {
+    font-family: Arial, sans-serif;
+    /* Fuente por defecto */
+    margin: 0;
+    /* Elimina el margen por defecto */
+    padding: 0;
+    /* Elimina el padding por defecto */
+    background: url('../imagenes/principal-img/fondo.png') no-repeat center center fixed;
+    /* Fondo de pantalla con una imagen, centrada y fija */
+    background-size: cover;
+    /* La imagen cubre toda la pantalla */
+    color: white;
+    /* Color del texto en blanco */
+    display: flex;
+    /* Usa flexbox para el layout */
+    flex-direction: column;
+    /* Dirección de los elementos en columna */
+    min-height: 100vh;
+    /* Altura mínima del viewport */
+}
+
+header {
+    background-color: #252424;
+    /* Color de fondo del encabezado */
+    display: flex;
+    /* Usa flexbox para el layout */
+    justify-content: space-between;
+    /* Distribuye el espacio entre los elementos */
+    align-items: center;
+    /* Alinea los elementos en el centro verticalmente */
+    padding: 10px;
+    /* Padding alrededor del encabezado */
+    flex-wrap: wrap;
+    /* Permite que los elementos se envuelvan en múltiples líneas si es necesario */
+}
+
+header .logo img {
+    height: 90px;
+    /* Tamaño del logo ajustado */
+}
+
+header .social-media {
+    display: flex;
+    /* Usa flexbox para los iconos de redes sociales */
+    align-items: center;
+    /* Alinea los iconos en el centro verticalmente */
+}
+
+header .social-media a img {
+    height: 30px;
+    /* Tamaño ajustado para redes sociales */
+    margin: 0 20px;
+    /* Más separación entre los iconos */
+}
+
+header nav {
+    display: flex;
+    /* Usa flexbox para la navegación */
+    align-items: center;
+    /* Alinea los enlaces en el centro verticalmente */
+}
+
+header nav a {
+    margin: 0 25px;
+    /* Espaciado entre los enlaces */
+    text-decoration: none;
+    /* Elimina el subrayado */
+    color: white;
+    /* Color del texto en blanco */
+}
+
+header .sidebar-icon {
+    cursor: pointer;
+    /* Cambia el cursor al pasar sobre el icono */
+    color: white;
+    /* Color del icono en blanco */
+    margin-left: 10px;
+    /* Margen a la izquierda */
+}
+
+.sidebar {
+    display: none;
+    /* Oculta la barra lateral por defecto */
+    background-color: #dad9d9;
+    /* Color de fondo de la barra lateral */
+    position: fixed;
+    /* Posiciona la barra lateral de forma fija */
+    top: 0;
+    /* Alinea la barra en la parte superior */
+    right: 0;
+    /* Alinea la barra en la parte derecha */
+    height: 40vh;
+    /* Altura reducida */
+    width: 250px;
+    /* Ancho de la barra lateral */
+    box-shadow: -2px 0 5px rgba(0,0,0,0.5);
+    /* Sombra para la barra lateral */
+    padding: 20px;
+    /* Padding dentro de la barra lateral */
+    overflow-y: auto;
+    /* Añade scroll vertical si es necesario */
+    z-index: 1000;
+    /* Asegura que la barra esté encima de otros elementos */
+}
+
+.sidebar .close-btn {
+    font-size: 30px;
+    /* Tamaño de la fuente del botón de cierre */
+    cursor: pointer;
+    /* Cambia el cursor al pasar sobre el botón */
+    color: black;
+    /* Color del texto del botón */
+    text-align: right;
+    /* Alinea el texto a la derecha */
+}
+
+.sidebar .user-info {
+    margin-bottom: 20px;
+    /* Espacio adicional debajo de la información del usuario */
+}
+
+.sidebar .user-info p {
+    color: #000000;
+    /* Color del texto del usuario */
+    margin: 5px 0;
+    /* Margen entre los párrafos */
+    font-size: 1.2em;
+    /* Tamaño de fuente ajustado */
+}
+
+.sidebar hr {
+    border: 0;
+    /* Elimina el borde por defecto */
+    height: 1px;
+    /* Altura del separador */
+    background-color: #000000;
+    /* Color del separador */
+    margin: 10px 0;
+    /* Espacio entre los separadores y los enlaces */
+}
+
+.sidebar a {
+    display: block;
+    /* Hace que los enlaces sean bloques */
+    margin: 20px 0;
+    /* Más espacio entre los enlaces del sidebar */
+    text-decoration: none;
+    /* Elimina el subrayado */
+    color: black;
+    /* Color del texto */
+    font-size: 1.2em;
+    /* Tamaño de letra ajustado */
+}
+
+main {
+    flex: 1;
+    /* Permite que el main ocupe el espacio disponible */
+    display: flex;
+    /* Usa flexbox para el layout */
+    justify-content: center;
+    /* Centra el contenido horizontalmente */
+    align-items: center;
+    /* Centra el contenido verticalmente */
+    padding: 20px;
+    /* Padding alrededor del main */
+}
+
+.cards-container {
+    display: grid;
+    /* Usa grid layout */
+    grid-template-columns: repeat(3, 1fr);
+    /* Tres columnas iguales */
+    gap: 80px;
+    /* Mayor separación entre tarjetas */
+    margin: 60px;
+    /* Separación con los laterales */
+}
+
+.card {
+    background-color: rgba(0, 0, 0, 0.6);
+    /* Fondo negro semitransparente */
+    color: white;
+    /* Color del texto en blanco */
+    text-align: center;
+    /* Texto centrado */
+    cursor: pointer;
+    /* Cambia el cursor al pasar sobre la tarjeta */
+    position: relative;
+    /* Posiciona los elementos relativamente */
+    border-radius: 5px;
+    /* Bordes redondeados */
+    overflow: hidden;
+    /* Asegura que el contenido no se desborde */
+    height: 200px;
+    /* Altura fija para las tarjetas */
+    transition: transform 0.3s;
+    /* Transición suave al hacer hover */
+}
+
+.card:hover {
+    transform: scale(1.05);
+    /* Agranda la tarjeta al hacer hover */
+}
+
+.card img {
+    width: 100%;
+    /* Ancho completo de la tarjeta */
+    height: 100%;
+    /* Altura completa de la tarjeta */
+    object-fit: cover;
+    /* Asegura que la imagen cubra el área sin distorsionarse */
+}
+
+.card p {
+    position: absolute;
+    /* Posiciona el texto de forma absoluta */
+    bottom: 0;
+    /* Alinea el texto en la parte inferior */
+    left: 0;
+    /* Alinea el texto a la izquierda */
+    right: 0;
+    /* Alinea el texto a la derecha */
+    margin: 0;
+    /* Elimina el margen */
+    padding: 10px;
+    /* Padding alrededor del texto */
+    background: rgba(0, 0, 0, 0.9);
+    /* Fondo negro semitransparente */
+    color: white;
+    /* Color del texto en blanco */
+    font-size: 1em;
+    /* Tamaño de letra ajustado */
+    text-align: center;
+    /* Texto centrado */
+    border-radius: 0 0 5px 5px;
+    /* Bordes redondeados solo en la parte inferior */
+}
+
+footer {
+    background-color: #252424;
+    /* Color de fondo del pie de página */
+    color: white;
+    /* Color del texto en blanco */
+    padding: 10px;
+    /* Padding alrededor del pie de página */
+    display: flex;
+    /* Usa flexbox para el layout */
+    justify-content: space-between;
+    /* Distribuye el espacio entre los elementos */
+    align-items: center;
+    /* Alinea los elementos en el centro verticalmente */
+    flex-wrap: wrap;
+    /* Permite que los elementos se envuelvan en múltiples líneas si es necesario */
+}
+
+footer nav.footer-nav a {
+    color: white;
+    /* Color del texto en blanco */
+    text-decoration: none;
+    /* Elimina el subrayado */
+    margin: 0 10px;
+    /* Margen entre los enlaces del pie de página */
+}
+
+footer .contacto p {
+    margin: 5px 0;
+    /* Margen entre los párrafos */
+}

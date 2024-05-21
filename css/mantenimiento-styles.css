@@ -1,0 +1,192 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('../imagenes/mantenimiento-img/mantenimiento-fondo.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #252424;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 0;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+header .logo img {
+    height: 90px; /* Tamaño del logo ajustado */
+}
+
+header .social-media {
+    display: flex;
+    align-items: center;
+}
+
+header .social-media a img {
+    height: 30px; /* Tamaño ajustado para redes sociales */
+    margin: 0 20px; /* Más separación entre los íconos */
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+header nav a {
+    margin: 0 25px;
+    text-decoration: none;
+    color: white;
+}
+
+header .sidebar-icon {
+    cursor: pointer;
+    color: white;
+    margin-left: 10px;
+}
+
+.sidebar {
+    display: none;
+    background-color: #dad9d9;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 50vh; /* Altura reducida */
+    width: 250px;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.5);
+    padding: 20px;
+    overflow-y: auto;
+    z-index: 1000;
+}
+
+.sidebar .close-btn {
+    font-size: 30px;
+    cursor: pointer;
+    color: black;
+    text-align: right;
+}
+
+.sidebar .user-info {
+    margin-bottom: 20px; /* Espacio adicional debajo de la información del usuario */
+}
+
+.sidebar .user-info p {
+    color: #000000;
+    margin: 5px 0;
+    font-size: 1.2em; /* Tamaño de fuente ajustado */
+}
+
+.sidebar hr {
+    border: 0;
+    height: 1px;
+    background-color: #000000;
+    margin: 10px 0; /* Espacio entre los separadores y los enlaces */
+}
+
+.sidebar a {
+    display: block;
+    margin: 20px 0; /* Más espacio entre los enlaces del sidebar */
+    text-decoration: none;
+    color: black;
+    font-size: 1.2em; /* Tamaño de letra ajustado para los botones de acceso rápido */
+}
+
+main {
+    padding: 5px;
+}
+
+
+
+.support-maintenance h1 {
+    margin-bottom: 20px;
+}
+
+.support-maintenance p {
+    margin-bottom: 40px;
+}
+
+.Bienvenido{
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0,0,0,0.96);
+
+}
+
+.Bienvenido, p{
+    font-size: 20px;
+}
+
+.problemas{
+    padding: 5px;
+    background-color: rgba(0,0,0,0.96);
+}
+
+.problemas textarea{
+    border: #000000;
+    border-style: double;
+    border-radius: 10px;
+    resize: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+}
+
+.problemas button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.problemas button:hover {
+    background-color: #45a049;
+}
+
+.faq{
+    padding: 20px;
+    background-color: rgba(0,0,0,0.96);
+}
+
+.aa1{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: rgba(112, 108, 108, 0.96);
+    border-radius: 30px;
+}
+
+
+
+
+
+
+
+
+
+footer {
+    background-color: #252424;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer nav.footer-nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer .contacto p {
+    margin: 5px 0;
+}

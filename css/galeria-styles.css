@@ -1,0 +1,240 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('../imagenes/galeria-img/fondo54.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #252424;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+header .logo img {
+    height: 90px; /* Tamaño del logo ajustado */
+}
+
+header .social-media {
+    display: flex;
+    align-items: center;
+}
+
+header .social-media a img {
+    height: 30px; /* Tamaño ajustado para redes sociales */
+    margin: 0 20px; /* Más separación entre los íconos */
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+header nav a {
+    margin: 0 25px;
+    text-decoration: none;
+    color: white;
+}
+
+header .sidebar-icon {
+    cursor: pointer;
+    color: white;
+    margin-left: 10px;
+}
+
+.sidebar {
+    display: none;
+    background-color: #dad9d9;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 40vh; /* Altura reducida */
+    width: 250px;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.5);
+    padding: 20px;
+    overflow-y: auto;
+    z-index: 1000;
+}
+
+.sidebar .close-btn {
+    font-size: 30px;
+    cursor: pointer;
+    color: black;
+    text-align: right;
+}
+
+.sidebar .user-info {
+    margin-bottom: 20px; /* Espacio adicional debajo de la información del usuario */
+}
+
+.sidebar .user-info p {
+    color: #000000;
+    margin: 5px 0;
+    font-size: 1.2em; /* Tamaño de fuente ajustado */
+}
+
+.sidebar hr {
+    border: 0;
+    height: 1px;
+    background-color: #000000;
+    margin: 10px 0; /* Espacio entre los separadores y los enlaces */
+}
+
+.sidebar a {
+    display: block;
+    margin: 20px 0; /* Más espacio entre los enlaces del sidebar */
+    text-decoration: none;
+    color: black;
+    font-size: 1.2em; /* Tamaño de letra ajustado para los botones de acceso rápido */
+}
+
+main {
+    padding: 20px;
+}
+
+
+/* Estilos para la galería */
+
+.gallery-header {
+    text-align: center;
+    margin-bottom: 40px;
+    background-color: rgba(0, 0, 0, 0.96);
+}
+
+.gallery-header h2 {
+    margin: 0;
+    font-size: 2em;
+    color: #fff;
+}
+
+.gallery-header p {
+    font-size: 1.2em;
+    color: #ddd;
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.gallery-item {
+    position: relative;
+    flex: 1 1 calc(20% - 20px);
+    margin: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s;
+    background-color: #252424;
+    height: 200px; /* Altura fija para las imágenes */
+    color: #ffffff;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery-item figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.95); /* Fondo semitransparente */
+    font-size: 1em;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    height: auto;
+    max-height: 80vh; /* Altura máxima del modal */
+    object-fit: cover;
+}
+
+#modal-caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+}
+
+.close {
+    position: absolute;
+    top: 30px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+
+
+
+footer {
+    background-color: #252424;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer nav.footer-nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer .contacto p {
+    margin: 5px 0;
+}

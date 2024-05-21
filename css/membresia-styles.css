@@ -1,0 +1,375 @@
+/* Estilos para el elemento body */
+body {
+    /* Familia de fuentes */
+    font-family: Arial, sans-serif;
+    /* Márgenes */
+    margin: 0;
+    /* Relleno */
+    padding: 0;
+    /* Fondo con imagen */
+    background: url('../imagenes/membresia-img/fondo3.png') no-repeat center center fixed;
+    /* Tamaño de la imagen de fondo */
+    background-size: cover;
+    /* Color del texto */
+    color: white;
+    /* Utilizar flexbox */
+    display: flex;
+    /* Dirección de los elementos flexibles */
+    flex-direction: column;
+    /* Altura mínima del viewport */
+    min-height: 100vh;
+}
+
+/* Estilos para el elemento header */
+header {
+    /* Color de fondo */
+    background-color: #252424;
+    /* Utilizar flexbox */
+    display: flex;
+    /* Distribución de los elementos a lo largo del eje principal */
+    justify-content: space-between;
+    /* Alineación de los elementos en el eje transversal */
+    align-items: center;
+    /* Relleno */
+    padding: 10px;
+    /* Permitir que los elementos envuelvan */
+    flex-wrap: wrap;
+}
+
+/* Estilos para las imágenes del logo dentro del header */
+header .logo img {
+    /* Altura de la imagen del logo */
+    height: 90px;
+}
+
+/* Estilos para la sección de redes sociales dentro del header */
+header .social-media {
+    /* Utilizar flexbox */
+    display: flex;
+    /* Alineación de los elementos en el eje transversal */
+    align-items: center;
+}
+
+/* Estilos para las imágenes de los enlaces de redes sociales dentro del header */
+header .social-media a img {
+    /* Altura de las imágenes de redes sociales */
+    height: 30px;
+    /* Márgenes */
+    margin: 0 20px;
+}
+
+/* Estilos para el elemento nav dentro del header */
+header nav {
+    /* Utilizar flexbox */
+    display: flex;
+    /* Alineación de los elementos en el eje transversal */
+    align-items: center;
+}
+
+/* Estilos para los enlaces dentro del elemento nav */
+header nav a {
+    /* Márgenes */
+    margin: 0 25px;
+    /* Sin subrayado en los enlaces */
+    text-decoration: none;
+    /* Color del texto */
+    color: white;
+}
+
+/* Estilos para el icono de la barra lateral dentro del header */
+header .sidebar-icon {
+    /* Cambiar el cursor al pasar sobre el icono */
+    cursor: pointer;
+    /* Color del icono */
+    color: white;
+    /* Margen izquierdo */
+    margin-left: 10px;
+}
+
+
+/* Estilos para la barra lateral */
+.sidebar {
+    /* Ocultar la barra lateral por defecto */
+    display: none;
+    /* Color de fondo */
+    background-color: #dad9d9;
+    /* Posición fija */
+    position: fixed;
+    /* Alineación al borde superior */
+    top: 0;
+    /* Alineación al borde derecho */
+    right: 0;
+    /* Altura de la barra lateral */
+    height: 50vh;
+    /* Ancho de la barra lateral */
+    width: 250px;
+    /* Sombra para la barra lateral */
+    box-shadow: -2px 0 5px rgba(0,0,0,0.5);
+    /* Relleno interior */
+    padding: 20px;
+    /* Habilitar desplazamiento vertical */
+    overflow-y: auto;
+    /* Prioridad de apilamiento */
+    z-index: 1000;
+}
+
+/* Estilos para el botón de cerrar la barra lateral */
+.sidebar .close-btn {
+    /* Tamaño de la fuente */
+    font-size: 30px;
+    /* Cambiar el cursor al pasar sobre el botón */
+    cursor: pointer;
+    /* Color del texto */
+    color: black;
+    /* Alineación del texto a la derecha */
+    text-align: right;
+}
+
+/* Estilos para la información del usuario en la barra lateral */
+.sidebar .user-info {
+    /* Margen inferior */
+    margin-bottom: 20px;
+}
+
+/* Estilos para los párrafos de la información del usuario */
+.sidebar .user-info p {
+    /* Color del texto */
+    color: #000000;
+    /* Márgenes */
+    margin: 5px 0;
+    /* Tamaño de la fuente */
+    font-size: 1.2em;
+}
+
+/* Estilos para las líneas horizontales en la barra lateral */
+.sidebar hr {
+    /* Sin borde */
+    border: 0;
+    /* Altura de la línea */
+    height: 1px;
+    /* Color de fondo */
+    background-color: #000000;
+    /* Márgenes */
+    margin: 10px 0;
+}
+
+/* Estilos para los enlaces en la barra lateral */
+.sidebar a {
+    /* Mostrar como bloques */
+    display: block;
+    /* Márgenes */
+    margin: 20px 0;
+    /* Sin subrayado en los enlaces */
+    text-decoration: none;
+    /* Color del texto */
+    color: black;
+    /* Tamaño de la fuente */
+    font-size: 1.2em;
+}
+
+/* Estilos para el elemento main */
+main {
+    /* Flexibilidad para expandirse */
+    flex: 1;
+    /* Relleno */
+    padding: 20px;
+}
+
+/* Estilos para la información general */
+.general-info{
+    /* Relleno */
+    padding: 12px;
+    /* Color de fondo con transparencia */
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* Estilos para el botón de renovar membresía */
+.renew-button {
+    /* Color de fondo */
+    background-color: green;
+    /* Color del texto */
+    color: white;
+    /* Sin borde */
+    border: none;
+    /* Relleno */
+    padding: 10px 20px;
+    /* Cambiar el cursor al pasar sobre el botón */
+    cursor: pointer;
+    /* Bordes redondeados */
+    border-radius: 5px;
+}
+
+/* Estilos para el botón de cancelar membresía */
+.cancel-button {
+    /* Color de fondo */
+    background-color: red;
+    /* Color del texto */
+    color: white;
+    /* Sin borde */
+    border: none;
+    /* Relleno */
+    padding: 10px 20px;
+    /* Cambiar el cursor al pasar sobre el botón */
+    cursor: pointer;
+    /* Bordes redondeados */
+    border-radius: 5px;
+}
+
+/* Estilos para los contenedores de planes */
+.plans, .combined-plans {
+    /* Margen inferior */
+    margin-bottom: 40px;
+}
+
+/* Estilos para los contenedores de tarjetas de planes */
+.plan-cards {
+    /* Utilizar flexbox */
+    display: flex;
+    /* Distribuir espacio entre los elementos */
+    justify-content: space-between;
+}
+
+/* Estilos para las tarjetas de planes */
+.plan-card {
+    /* Color de fondo con transparencia */
+    background-color: rgba(0, 0, 0, 0.6);
+    /* Relleno */
+    padding: 10px;
+    /* Bordes redondeados */
+    border-radius: 5px;
+    /* Alineación del texto al centro */
+    text-align: center;
+    /* Ancho de las tarjetas */
+    width: 30%;
+}
+
+/* Estilos para las imágenes dentro de las tarjetas de planes */
+.plan-card img {
+    /* Ancho completo */
+    width: 100%;
+    /* Bordes redondeados */
+    border-radius: 5px;
+}
+
+/* Estilos para los botones dentro de las tarjetas de planes */
+.plan-card button {
+    /* Color de fondo */
+    background-color: blue;
+    /* Color del texto */
+    color: white;
+    /* Sin borde */
+    border: none;
+    /* Relleno */
+    padding: 10px 20px;
+    /* Cambiar el cursor al pasar sobre el botón */
+    cursor: pointer;
+    /* Bordes redondeados */
+    border-radius: 5px;
+    /* Margen superior */
+    margin-top: 10px;
+}
+
+/* Estilos para la sección de beneficios */
+.benefits {
+    /* Utilizar flexbox */
+    display: flex;
+    /* Dirección de los elementos flexibles */
+    flex-direction: column;
+    /* Espacio entre secciones de beneficios */
+    gap: 40px;
+}
+
+/* Estilos para cada beneficio */
+.benefit {
+    /* Utilizar flexbox */
+    display: flex;
+    /* Dirección de los elementos flexibles */
+    flex-direction: column;
+    /* Espacio entre elementos */
+    gap: 20px;
+    /* Color de fondo con transparencia */
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Relleno */
+    padding: 20px;
+    /* Bordes redondeados */
+    border-radius: 5px;
+}
+
+/* Estilos para el contenido de cada beneficio */
+.benefit-content {
+    /* Utilizar flexbox */
+    display: flex;
+    /* Espacio entre elementos */
+    gap: 20px;
+}
+
+/* Estilos para las imágenes dentro de los beneficios */
+.benefit img {
+    /* Ancho fijo */
+    width: 150px;
+    /* Bordes redondeados */
+    border-radius: 5px;
+}
+
+/* Estilos para los encabezados dentro de los beneficios */
+.benefit h3 {
+    /* Sin margen superior */
+    margin-top: 0;
+    /* Alineación del texto a la izquierda */
+    text-align: left;
+}
+
+/* Estilos para las listas dentro de los beneficios */
+.benefit ul {
+    /* Sin estilo de lista */
+    list-style: none;
+    /* Sin relleno */
+    padding: 0;
+    /* Sin márgenes */
+    margin: 0;
+    /* Alineación del texto a la izquierda */
+    text-align: left;
+}
+
+/* Estilos para los elementos de lista dentro de los beneficios */
+.benefit ul li {
+    /* Margen inferior */
+    margin-bottom: 15px;
+}
+
+/* Estilos para el elemento footer */
+footer {
+    /* Color de fondo */
+    background-color: #252424;
+    /* Color del texto */
+    color: white;
+    /* Relleno */
+    padding: 10px;
+    /* Utilizar flexbox */
+    display: flex;
+    /* Distribuir espacio entre los elementos */
+    justify-content: space-between;
+    /* Alineación de los elementos en el eje transversal */
+    align-items: center;
+    /* Permitir que los elementos envuelvan */
+    flex-wrap: wrap;
+}
+
+/* Estilos para los enlaces dentro del nav en el footer */
+footer nav.footer-nav a {
+    /* Márgenes */
+    margin: 0 15px;
+    /* Sin subrayado en los enlaces */
+    text-decoration: none;
+    /* Color del texto */
+    color: white;
+}
+
+/* Estilos para los párrafos dentro de la sección de contacto en el footer */
+footer .contacto p {
+    /* Márgenes */
+    margin: 5px 0;
+    /* Alineación del texto al centro */
+    text-align: center;
+}
+

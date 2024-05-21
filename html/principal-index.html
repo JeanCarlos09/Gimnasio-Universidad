@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- Define el tipo de documento como HTML5 y establece el idioma como español -->
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Establece la codificación de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Hace que la página sea responsiva, ajustando el ancho a la pantalla del dispositivo -->
+    <title>Gimnasio Universitario</title>
+    <!-- Título de la página que aparece en la pestaña del navegador -->
+    <link rel="stylesheet" href="../css/principal-styles.css">
+    <!-- Enlace al archivo de estilos CSS -->
+    <script defer src="../javascritps/principal-scripts.js"></script>
+    <!-- Enlace al archivo JavaScript, diferido para que se cargue después del HTML -->
+</head>
+
+<body>
+    <!-- Cuerpo del documento -->
+    <header>
+        <!-- Encabezado de la página -->
+        <div class="logo">
+            <img src="../imagenes/principal-img/Imagen2.png" alt="Logo">
+            <!-- Logo del gimnasio -->
+        </div>
+        <div class="social-media">
+            <!-- Sección para iconos de redes sociales -->
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="../imagenes/principal-img/facebook.png" alt="Facebook">
+                <!-- Enlace a Facebook -->
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="../imagenes/principal-img/instagran.png" alt="Instagram">
+                <!-- Enlace a Instagram -->
+            </a>
+            <a href="https://www.twitter.com" target="_blank">
+                <img src="../imagenes/principal-img/x.png" alt="Twitter">
+                <!-- Enlace a Twitter -->
+            </a>
+        </div>
+        <nav>
+            <!-- Navegación principal -->
+            <a href="../html/principal-index.html"><b>Inicio</b></a>
+            <!-- Enlace a la página de inicio -->
+            <a href="../html/clases-index.html"><b>Clases</b></a>
+            <!-- Enlace a la página de clases -->
+            <a href="../html/membresia-index.html"><b>Membresía</b></a>
+            <!-- Enlace a la página de membresía -->
+            <a href="../html/galeria-index.html"><b>Galeria</b></a>
+            <!-- Enlace a la galería -->
+            <a href="../html/blogs-index.html"><b>Blog</b></a>
+            <!-- Enlace al blog -->
+            <div class="sidebar-icon" onclick="toggleSidebar()"><b>☰</b></div>
+            <!-- Icono para abrir la barra lateral, llama a la función toggleSidebar() -->
+        </nav>
+    </header>
+    <aside id="sidebar" class="sidebar">
+        <!-- Barra lateral oculta -->
+        <div class="close-btn" onclick="toggleSidebar()">×</div>
+        <!-- Botón para cerrar la barra lateral -->
+        <div class="user-info">
+            <!-- Información del usuario -->
+            <p>Nombre Apellido</p>
+            <!-- Nombre del usuario -->
+            <p>correo@ejemplo.com</p>
+            <!-- Correo electrónico del usuario -->
+        </div>
+        <hr>
+        <!-- Línea horizontal -->
+        <a href="../html/perfil-index.html">Perfil</a>
+        <!-- Enlace a la página de perfil -->
+        <hr>
+        <a href="../html/inicio-index.html">Salir</a>
+        <!-- Enlace para salir (cerrar sesión) -->
+    </aside>
+    <main>
+        <!-- Contenido principal -->
+        <div class="cards-container">
+            <!-- Contenedor de tarjetas -->
+            <section class="card" id="membresia" onclick="navigateTo('/html/membresia-index.html')">
+                <img src="../imagenes/principal-img/membresia.png" alt="Membresía">
+                <!-- Imagen de membresía -->
+                <p>Membresía</p>
+                <!-- Texto de membresía -->
+            </section>
+            <section class="card" id="inscripcion" onclick="navigateTo('/html/clases-index.html')">
+                <img src="../imagenes/principal-img/clases.png" alt="Inscripción en Clases">
+                <!-- Imagen de inscripción en clases -->
+                <p>Inscripción en Clases</p>
+                <!-- Texto de inscripción en clases -->
+            </section>
+            <section class="card" id="pagos" onclick="navigateTo('/html/pagos-index.html')">
+                <img src="../imagenes/principal-img/pagos.png" alt="Pagos y Facturación">
+                <!-- Imagen de pagos y facturación -->
+                <p>Pagos y Facturación</p>
+                <!-- Texto de pagos y facturación -->
+            </section>
+            <section class="card" id="progreso" onclick="navigateTo('/html/progreso-index.html')">
+                <img src="../imagenes/principal-img/progreso.png" alt="Progreso y Metas">
+                <!-- Imagen de progreso y metas -->
+                <p>Progreso y Metas</p>
+                <!-- Texto de progreso y metas -->
+            </section>
+            <section class="card" id="calendario" onclick="navigateTo('/html/calendario-index.html')">
+                <img src="../imagenes/principal-img/calendario.png" alt="Calendario">
+                <!-- Imagen de calendario -->
+                <p>Calendario</p>
+                <!-- Texto de calendario -->
+            </section>
+            <section class="card" id="problemas" onclick="navigateTo('/html/mantenimiento-index.html')">
+                <img src="../imagenes/principal-img/problemas.png" alt="Problemas y Mantenimiento">
+                <!-- Imagen de problemas y mantenimiento -->
+                <p>Problemas y Mantenimiento</p>
+                <!-- Texto de problemas y mantenimiento -->
+            </section>
+        </div>
+    </main>
+    <footer>
+        <!-- Pie de página -->
+        <nav class="footer-nav">
+            <!-- Navegación en el pie de página -->
+            <a href="#terminos">Términos y Condiciones</a>
+            <!-- Enlace a términos y condiciones -->
+            <a href="#privacidad">Política de Privacidad</a>
+            <!-- Enlace a política de privacidad -->
+        </nav>
+        <div class="contacto">
+            <!-- Información de contacto -->
+            <p>Gimnasio Universitario</p>
+            <!-- Nombre del gimnasio -->
+            <p>Dirección: Calle Falsa 123</p>
+            <!-- Dirección del gimnasio -->
+            <p>Teléfono: 555-1234</p>
+            <!-- Teléfono de contacto -->
+            <p>Email: info@gimnasio.com</p>
+            <!-- Correo electrónico de contacto -->
+        </div>
+    </footer>
+</body>
+</html>

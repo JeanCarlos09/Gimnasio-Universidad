@@ -1,0 +1,256 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('../imagenes/progreso-img/progreso-img.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #252424;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+header .logo img {
+    height: 90px; /* Tamaño del logo ajustado */
+}
+
+header .social-media {
+    display: flex;
+    align-items: center;
+}
+
+header .social-media a img {
+    height: 30px; /* Tamaño ajustado para redes sociales */
+    margin: 0 20px; /* Más separación entre los íconos */
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+header nav a {
+    margin: 0 25px;
+    text-decoration: none;
+    color: white;
+}
+
+header .sidebar-icon {
+    cursor: pointer;
+    color: white;
+    margin-left: 10px;
+}
+
+.sidebar {
+    display: none;
+    background-color: #dad9d9;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 50vh; /* Altura reducida */
+    width: 250px;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.5);
+    padding: 20px;
+    overflow-y: auto;
+    z-index: 1000;
+}
+
+.sidebar .close-btn {
+    font-size: 30px;
+    cursor: pointer;
+    color: black;
+    text-align: right;
+}
+
+.sidebar .user-info {
+    margin-bottom: 20px; /* Espacio adicional debajo de la información del usuario */
+}
+
+.sidebar .user-info p {
+    color: #000000;
+    margin: 5px 0;
+    font-size: 1.2em; /* Tamaño de fuente ajustado */
+}
+
+.sidebar hr {
+    border: 0;
+    height: 1px;
+    background-color: #000000;
+    margin: 10px 0; /* Espacio entre los separadores y los enlaces */
+}
+
+.sidebar a {
+    display: block;
+    margin: 20px 0; /* Más espacio entre los enlaces del sidebar */
+    text-decoration: none;
+    color: black;
+    font-size: 1.2em; /* Tamaño de letra ajustado para los botones de acceso rápido */
+}
+
+main {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Añadir estos estilos a tu archivo CSS existente */
+
+/* Añadir estos estilos a tu archivo CSS existente */
+
+.cabeza{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.progress-header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 5px;
+}
+
+.progress-header h2 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.progress-header p {
+    font-size: 1.2em;
+    color: #ddd;
+}
+
+.progress-summary {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+
+.summary-card {
+    background-color: rgba(51, 49, 49, 0.9);
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    width: 100px;
+}
+
+.summary-card h3 {
+    margin-top: 0;
+    font-size: 1.2em;
+    color: #fff;
+}
+
+.summary-card p {
+    font-size: 1.5em;
+    color: #fff;
+}
+
+.progress-container {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+}
+
+.progress-card {
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 20px;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 500px;
+}
+
+.progress-card h3 {
+    margin-top: 0;
+    font-size: 1.5em;
+    color: #fff;
+}
+
+.progress-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.progress-card ul li {
+    margin: 10px 0;
+    font-size: 1.2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.progress-card ul li span {
+    font-weight: bold;
+}
+
+.completed {
+    color: #4CAF50; /* Verde para completado */
+}
+
+.in-progress {
+    color: #FFC107; /* Amarillo para en progreso */
+}
+
+.not-started {
+    color: #F44336; /* Rojo para no iniciado */
+}
+
+#new-goal-form, #activity-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#new-goal-form input, #activity-form input, #new-goal-form button, #activity-form button {
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: none;
+}
+
+#new-goal-form button, #activity-form button {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#new-goal-form button:hover, #activity-form button:hover {
+    background-color: #45a049;
+}
+
+
+
+
+
+footer {
+    background-color: #252424;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer nav.footer-nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer .contacto p {
+    margin: 5px 0;
+}

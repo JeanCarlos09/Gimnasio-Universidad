@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gimnasio Universitario</title>
+    <link rel="stylesheet" href="../css/pagos-styles.css">
+    <script defer src="../javascritps/pagos-scripts.js"></script>
+</head>
+<body>
+     <!-- Cuerpo del documento -->
+     <header>
+        <!-- Encabezado de la página -->
+        <div class="logo">
+            <img src="../imagenes/principal-img/Imagen2.png" alt="Logo">
+            <!-- Logo del gimnasio -->
+        </div>
+        <div class="social-media">
+            <!-- Sección para iconos de redes sociales -->
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="../imagenes/principal-img/facebook.png" alt="Facebook">
+                <!-- Enlace a Facebook -->
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="../imagenes/principal-img/instagran.png" alt="Instagram">
+                <!-- Enlace a Instagram -->
+            </a>
+            <a href="https://www.twitter.com" target="_blank">
+                <img src="../imagenes/principal-img/x.png" alt="Twitter">
+                <!-- Enlace a Twitter -->
+            </a>
+        </div>
+        <nav>
+            <!-- Navegación principal -->
+            <a href="../html/principal-index.html"><b>Inicio</b></a>
+            <!-- Enlace a la página de inicio -->
+            <a href="../html/clases-index.html"><b>Clases</b></a>
+            <!-- Enlace a la página de clases -->
+            <a href="../html/membresia-index.html"><b>Membresía</b></a>
+            <!-- Enlace a la página de membresía -->
+            <a href="../html/galeria-index.html"><b>Galeria</b></a>
+            <!-- Enlace a la galería -->
+            <a href="../html/blogs-index.html"><b>Blog</b></a>
+            <!-- Enlace al blog -->
+            <div class="sidebar-icon" onclick="toggleSidebar()"><b>☰</b></div>
+            <!-- Icono para abrir la barra lateral, llama a la función toggleSidebar() -->
+        </nav>
+    </header>
+    <aside id="sidebar" class="sidebar">
+        <!-- Barra lateral oculta -->
+        <div class="close-btn" onclick="toggleSidebar()">×</div>
+        <!-- Botón para cerrar la barra lateral -->
+        <div class="user-info">
+            <!-- Información del usuario -->
+            <p>Nombre Apellido</p>
+            <!-- Nombre del usuario -->
+            <p>correo@ejemplo.com</p>
+            <!-- Correo electrónico del usuario -->
+        </div>
+        <hr>
+        <!-- Línea horizontal -->
+        <a href="../html/perfil-index.html">Perfil</a>
+        <!-- Enlace a la página de perfil -->
+        <hr>
+        <a href="../html/inicio-index.html">Salir</a>
+        <!-- Enlace para salir (cerrar sesión) -->
+    </aside>
+    <main>
+
+        
+            <!-- Etiqueta para seleccionar el tipo de membresía -->
+        <label for="membership-type"><h2>Seleccione el tipo de membresía:</label>
+        <!-- Selector de opciones de membresía -->
+        <select id="membership-type" class="custom-select" onchange="guardarSeleccion()">
+            <!-- Opción por defecto -->
+            <option value="">Seleccione una opción</option>
+            <!-- Opciones de membresía -->
+            <option value="day">Membresía por Día</option>
+            <option value="month">Membresía por Mes</option>
+            <option value="quarter">Membresía Trimestral</option>
+            <option value="semester">Membresía Semestral</option>
+            <option value="year">Membresía Anual</option>
+        </select>
+
+        <!-- Contenedor principal -->
+        <div class="container">
+            <!-- Primera parte del contenedor, parte izquierda -->
+            <div class="parte izquierda" id="membership-info">
+                <!-- Aquí se mostrará la información de membresía -->
+            </div>
+            <!-- Segunda parte del contenedor, parte derecha -->
+            <div class="parte derecha">
+                <!-- Formulario para seleccionar el método de pago -->
+                <form id="membership-form">
+                    <!-- Sección del formulario -->
+                    <div class="form-section">
+                        <!-- Etiqueta para seleccionar el método de pago -->
+                        <p>Método de pago:</p>
+                        <!-- Opciones de método de pago -->
+                        <div class="payment-option">
+                            <!-- Opción de tarjeta de crédito/débito -->
+                            <input type="radio" id="credit-card" name="payment-method" value="credit-card" onchange="mostrarPagos()">
+                            <label for="credit-card" class="payment-method-label">Tarjeta de crédito/débito</label>
+                            <!-- Logos de Visa y MasterCard -->
+                            <img src="../imagenes/pagos-img/master.png" alt="Visa Logo">
+                            <img src="../imagenes/pagos-img/visa.png" alt="MasterCard Logo">
+                        </div>
+                        <!-- Opción de PayPal -->
+                        <div class="payment-option">
+                            <input type="radio" id="paypal" name="payment-method" value="paypal" onchange="mostrarPagos()">
+                            <label for="paypal" class="payment-method-label">PayPal</label>
+                            <!-- Logo de PayPal -->
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="PayPal Logo">
+                        </div>
+                    </div>
+                </form>
+                <!-- Separador horizontal -->
+                <hr class="divider">
+                <!-- Contenedor para mostrar información de pago -->
+                <div class="payment-info" id="payment-info">
+                    <!-- Aquí se mostrará la información de pago -->
+                </div>
+            </div>
+        </div>
+
+         <hr class="divider">
+
+                <!-- Contenedor de detalles -->
+                <div class="detalles">
+                    <!-- Título para el historial de transacciones -->
+                    <h3>Historial de Transacciones</h3>
+                    <!-- Historial de Transacciones -->
+                    <div class="historial-transacciones">
+                        <!-- Tabla para mostrar las transacciones -->
+                        <table>
+                            <!-- Encabezados de la tabla -->
+                            <tr>
+                                <th>Fecha</th>
+                                <th>Descripción</th>
+                                <th>Monto</th>
+                                <th>Estado</th>
+                                <th>Comprobante</th>
+                            </tr>
+                            <!-- Filas de la tabla con datos -->
+                            <tr>
+                                <td>01/05/2024</td>
+                                <td>Membresía Mensual</td>
+                                <td>$20</td>
+                                <td>Pagado</td>
+                                <td><a href="#">Descargar</a></td>
+                            </tr>
+                            <!-- Puedes agregar más filas según sea necesario -->
+                        </table>
+                    </div>
+                </div>
+
+
+    </main>
+    <footer>
+        <!-- Pie de página -->
+        <nav class="footer-nav">
+            <!-- Navegación en el pie de página -->
+            <a href="#terminos">Términos y Condiciones</a>
+            <!-- Enlace a términos y condiciones -->
+            <a href="#privacidad">Política de Privacidad</a>
+            <!-- Enlace a política de privacidad -->
+        </nav>
+        <div class="contacto">
+            <!-- Información de contacto -->
+            <p>Gimnasio Universitario</p>
+            <!-- Nombre del gimnasio -->
+            <p>Dirección: Calle Falsa 123</p>
+            <!-- Dirección del gimnasio -->
+            <p>Teléfono: 555-1234</p>
+            <!-- Teléfono de contacto -->
+            <p>Email: info@gimnasio.com</p>
+            <!-- Correo electrónico de contacto -->
+        </div>
+    </footer>
+</body>
+</html>

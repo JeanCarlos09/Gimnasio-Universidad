@@ -1,0 +1,254 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('../imagenes/perfil-img/fondo.png') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #252424;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+header .logo img {
+    height: 90px; /* Tamaño del logo ajustado */
+}
+
+header .social-media {
+    display: flex;
+    align-items: center;
+}
+
+header .social-media a img {
+    height: 30px; /* Tamaño ajustado para redes sociales */
+    margin: 0 20px; /* Más separación entre los íconos */
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+header nav a {
+    margin: 0 25px;
+    text-decoration: none;
+    color: white;
+}
+
+header .sidebar-icon {
+    cursor: pointer;
+    color: white;
+    margin-left: 10px;
+}
+
+.sidebar {
+    display: none;
+    background-color: #dad9d9;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 40vh; /* Altura reducida */
+    width: 250px;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.5);
+    padding: 20px;
+    overflow-y: auto;
+    z-index: 1000;
+}
+
+.sidebar .close-btn {
+    font-size: 30px;
+    cursor: pointer;
+    color: black;
+    text-align: right;
+}
+
+.sidebar .user-info {
+    margin-bottom: 20px; /* Espacio adicional debajo de la información del usuario */
+}
+
+.sidebar .user-info p {
+    color: #000000;
+    margin: 5px 0;
+    font-size: 1.2em; /* Tamaño de fuente ajustado */
+}
+
+.sidebar hr {
+    border: 0;
+    height: 1px;
+    background-color: #000000;
+    margin: 10px 0; /* Espacio entre los separadores y los enlaces */
+}
+
+.sidebar a {
+    display: block;
+    margin: 20px 0; /* Más espacio entre los enlaces del sidebar */
+    text-decoration: none;
+    color: black;
+    font-size: 1.2em; /* Tamaño de letra ajustado para los botones de acceso rápido */
+}
+
+
+main{
+    padding-bottom: 50px;
+    padding-left: 0;
+    padding-right: 0;
+
+}
+
+.sidebar1 {
+    width: 250px;
+    background-color: rgba(0,0,0,0.59);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    padding: 20px;
+}
+
+
+
+.profile-pic {
+    text-align: center;
+}
+
+.profile-pic img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.profile-pic button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.profile-pic button:hover {
+    background-color: #2980b9;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+.menu li {
+    padding: 15px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #34495e;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.menu li:hover {
+    background-color: #3c5a72;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: rgba(0,0,0,0.93);
+}
+
+.section {
+    display: flex;
+}
+
+.section.active {
+    display: block;
+}
+
+h2 {
+    color: #ffffff;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.error-message {
+    color: red;
+    font-size: 12px;
+    display: none;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+
+
+.left-side {
+    width: 22%; /* O el ancho que desees */
+    float: left; /* Para que estén uno al lado del otro */
+}
+
+.right-side {
+    width: 60%; /* O el ancho que desees */
+    float: left; /* Para que estén uno al lado del otro */
+}
+
+
+
+
+footer {
+    background-color: #252424;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer nav.footer-nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer .contacto p {
+    margin: 5px 0;
+}

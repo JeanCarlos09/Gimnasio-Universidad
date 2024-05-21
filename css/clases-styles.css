@@ -1,0 +1,246 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('../imagenes/clases-img/fondo5.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #252424;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+header .logo img {
+    height: 90px;
+}
+
+header .social-media {
+    display: flex;
+    align-items: center;
+}
+
+header .social-media a img {
+    height: 30px;
+    margin: 0 20px;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+header nav a {
+    margin: 0 25px;
+    text-decoration: none;
+    color: white;
+}
+
+header .sidebar-icon {
+    cursor: pointer;
+    color: white;
+    margin-left: 10px;
+}
+
+.sidebar {
+    display: none;
+    background-color: #dad9d9;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 50vh;
+    width: 250px;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.5);
+    padding: 20px;
+    overflow-y: auto;
+    z-index: 1000;
+}
+
+.sidebar .close-btn {
+    font-size: 30px;
+    cursor: pointer;
+    color: black;
+    text-align: right;
+}
+
+.sidebar .user-info {
+    margin-bottom: 20px;
+}
+
+.sidebar .user-info p {
+    color: #000000;
+    margin: 5px 0;
+    font-size: 1.2em;
+}
+
+.sidebar hr {
+    border: 0;
+    height: 1px;
+    background-color: #000000;
+    margin: 10px 0;
+}
+
+.sidebar a {
+    display: block;
+    margin: 20px 0;
+    text-decoration: none;
+    color: black;
+    font-size: 1.2em;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+
+.plan-cards {
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.plan-card {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    text-align: center;
+    width: 30%;
+}
+
+.plan-card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+
+.benefits{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+
+.benefit-hola {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    gap: 150px;
+    padding: 20px; /* Aumentar padding */
+}
+
+.Inf{
+    padding: 40px;
+    padding-bottom: 20px;
+    border-radius: 20px;
+    background-color: rgba(82, 81, 81, 0.9);
+}
+
+.benefit ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.benefit ul li {
+    margin-bottom: 15px; /* Aumentar espacio entre elementos de la lista */
+}
+
+.boton{
+    background-color: rgb(43, 191, 43);
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.boton:hover {
+    background-color: #044c05;
+}
+
+.mis-clases {
+    background-color: rgba(0, 0, 0, 0.9);
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.mis-clases h2 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #ffffff;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+thead {
+    background-color: rgba(226, 211, 211, 0.9);
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ffffff;
+}
+
+th {
+    font-weight: bold;
+    color: #000000;
+}
+
+td {
+    color: #ffffff;
+}
+
+.cancelar {
+    background-color: #ff4d4d;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cancelar:hover {
+    background-color: #e60000;
+}
+
+footer {
+    background-color: #252424;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer nav.footer-nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+}
+
+footer .contacto p {
+    margin: 5px 0;
+    text-align: center;
+}

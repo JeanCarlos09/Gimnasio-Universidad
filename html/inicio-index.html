@@ -1,0 +1,46 @@
+<!DOCTYPE html> <!-- Declaración del tipo de documento -->
+<html lang="es"> <!-- Etiqueta raíz del documento con atributo de idioma -->
+<head>
+  <meta charset="UTF-8"> <!-- Configuración del juego de caracteres -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configuración de la visualización en dispositivos móviles -->
+  <title>Iniciar Sesión - Software de Gestión Gimnasio Universitario</title> <!-- Título de la página -->
+  <link rel="stylesheet" href="../css/inicio-styles.css"> <!-- Enlace al archivo de estilos CSS -->
+</head>
+<body>
+  <main class="container">
+    <!-- Encabezado del formulario -->
+    <h1>
+      <img src="../imagenes/inicio-img/6.png" class="icono">Iniciar Sesión <!-- Encabezado principal con título y una imagen -->
+    </h1>
+    <!-- Formulario de inicio de sesión -->
+    <form id="login-form"> <!-- Formulario de inicio de sesión con un identificador único -->
+      <!-- Campo para el correo electrónico -->
+      <div class="form-group">
+        <label for="email">Correo electrónico:</label> <!-- Etiqueta para el correo electrónico -->
+        <input id="email" name="email" placeholder="Correo electrónico" autofocus> <!-- Entrada de texto para el correo electrónico -->
+        <span class="error-message"></span> <!-- Mensaje de error para el correo electrónico -->
+      </div>
+      <!-- Campo para la contraseña -->
+      <div class="form-group">
+        <label for="password">Contraseña:</label> <!-- Etiqueta para la contraseña -->
+        <input id="password" name="password" type="password" placeholder="Contraseña"> <!-- Entrada de texto para la contraseña -->
+        <span class="error-message"></span> <!-- Mensaje de error para la contraseña -->
+      </div>
+
+      
+      <!-- Opciones adicionales -->
+      <div class="options">
+        <label><input type="checkbox"> Recuérdame</label>
+        <a href="#" class="password-link">¿Olvidaste tu contraseña?</a>
+      </div>
+      <!-- Botón de iniciar sesión -->
+      <button type="submit">Iniciar Sesión</button> <!-- Botón de envío del formulario -->
+      
+      <div class="signup-link">
+        ¿Nuevo usuario? <a href="../html/registro-index.html">Crear cuenta</a>
+      </div>
+    </form>
+  </main>
+  <script src="../javascritps/inicio-script.js"></script> <!-- Inclusión del archivo de script JavaScript -->
+</body>
+</html>

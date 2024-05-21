@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gimnasio Universitario</title>
+    <link rel="stylesheet" href="../css/blogs-styles.css">
+    <script defer src="../javascritps/blogs-scripts.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo" >
+            <img  src="../imagenes/principal-img/Imagen2.png" alt="Logo">
+        </div>
+        <div class="social-media">
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="../imagenes/principal-img/facebook.png" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="../imagenes/principal-img/instagran.png" alt="Instagram">
+            </a>
+            <a href="https://www.twitter.com" target="_blank">
+                <img src="../imagenes/principal-img/x.png" alt="Twitter">
+            </a>
+        </div>
+        <nav>
+            <a href="../html/principal-index.html"><b>Inicio</b></a>
+            <a href="../html/clases-index.html"><b>Clases</b></a>  
+            <a href="../html/membresia-index.html"><b>Membresía</b></a>
+            <a href="../html/galeria-index.html"><b>Galeria</b></a>
+            <a href="../html/blogs-index.html"><b>Blog</b></a>
+            <div class="sidebar-icon" onclick="toggleSidebar()"><b>☰</b></div>
+        </nav>
+    </header>
+    <aside id="sidebar" class="sidebar">
+        <div class="close-btn" onclick="toggleSidebar()">×</div>
+        <div class="user-info">
+            <p>Nombre Apellido</p>
+            <p>correo@ejemplo.com</p>
+        </div>
+        <hr>
+        <a href="../html/perfil-index.html">Perfil</a>>
+        <hr>
+        <a href="../html/inicio-index.html">Salir</a>
+    </aside>
+    <main>
+        <div class="blog-container">
+            <article class="blog-post">
+                <img src="../imagenes/blogs-img/Importancia del entrenamiento de fuerza.jpeg" alt="Imagen Blog 1">
+                <div class="blog-content">
+                    <h2>Importancia del entrenamiento de fuerza</h2>
+                    <p>El entrenamiento de fuerza es fundamental para mantener una buena condición física y prevenir lesiones. Además, contribuye a aumentar la masa muscular, mejorar la postura corporal y aumentar el metabolismo basal.</p>
+                    <a href="#" class="read-more">Leer más</a>
+                </div>
+            </article>
+            <article class="blog-post">
+                <img src="../imagenes/blogs-img/Beneficios del entrenamiento cardiovascular.jpg" alt="Imagen Blog 2">
+                <div class="blog-content">
+                    <h2>Beneficios del entrenamiento cardiovascular</h2>
+                    <p> El entrenamiento cardiovascular, también conocido como cardio, es una forma de ejercicio que involucra la actividad aeróbica y tiene numerosos beneficios para la salud cardiovascular, la resistencia y la pérdida de grasa corporal.</p>
+                    <a href="#" class="read-more">Leer más</a>
+                </div>
+            </article>
+            <article class="blog-post">
+                <img src="../imagenes/blogs-img/Lesiones comunes en el gimnasio y su prevención.jpg" alt="Imagen Blog 2">
+                <div class="blog-content">
+                    <h2>Lesiones comunes en el gimnasio y su prevención</h2>
+                    <p>Aunque el ejercicio es beneficioso para la salud, también conlleva el riesgo de lesiones si no se toman las precauciones adecuadas. Conocer las lesiones más comunes en el gimnasio y cómo prevenirlas puede ayudarte a mantenerte a salvo y evitar interrupciones en tu rutina de entrenamiento.</p>
+                    <a href="#" class="read-more">Leer más</a>
+                </div>
+            </article>
+            <article class="blog-post">
+                <img src="../imagenes/blogs-img/Técnicas de relajación y recuperación.jpg" alt="Imagen Blog 2">
+                <div class="blog-content">
+                    <h2>Técnicas de relajación y recuperación</h2>
+                    <p>El entrenamiento intenso en el gimnasio puede ser estresante para el cuerpo y la mente. Es crucial incorporar técnicas de relajación y recuperación en tu rutina para evitar el sobreentrenamiento, reducir el riesgo de lesiones y maximizar los beneficios de tus esfuerzos.</p>
+                    <a href="#" class="read-more">Leer más</a>
+                </div>
+            </article>
+        </div>
+    </main>
+    <footer>
+        <nav class="footer-nav">
+            <a href="#terminos">Términos y Condiciones</a>
+            <a href="#privacidad">Política de Privacidad</a>
+        </nav>
+        <div class="contacto">
+            <p>Gimnasio Universitario</p>
+            <p>Dirección: Calle Falsa 123</p>
+            <p>Teléfono: 555-1234</p>
+            <p>Email: info@gimnasio.com</p>
+        </div>
+    </footer>
+</body>
+</html>

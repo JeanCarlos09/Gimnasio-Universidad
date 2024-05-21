@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gimnasio Universitario</title>
+    <link rel="stylesheet" href="../css/perfil-styles.css">
+    <script defer src="../javascritps/perfil-scripts.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo" >
+            <img  src="../imagenes/principal-img/Imagen2.png" alt="Logo">
+        </div>
+        <div class="social-media">
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="../imagenes/principal-img/facebook.png" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="../imagenes/principal-img/instagran.png" alt="Instagram">
+            </a>
+            <a href="https://www.twitter.com" target="_blank">
+                <img src="../imagenes/principal-img/x.png" alt="Twitter">
+            </a>
+        </div>
+        <nav>
+            <a href="../html/principal-index.html"><b>Inicio</b></a>
+            <a href="../html/clases-index.html"><b>Clases</b></a>  
+            <a href="../html/membresia-index.html"><b>Membresía</b></a>
+            <a href="../html/galeria-index.html"><b>Galeria</b></a>
+            <a href="../html/blogs-index.html"><b>Blog</b></a>
+            <div class="sidebar-icon" onclick="toggleSidebar()"><b>☰</b></div>
+        </nav>
+    </header>
+    <aside id="sidebar" class="sidebar">
+        <div class="close-btn" onclick="toggleSidebar()">×</div>
+        <div class="user-info">
+            <p>Nombre Apellido</p>
+            <p>correo@ejemplo.com</p>
+        </div>
+        <hr>
+        <a href="../html/perfil-index.html">Perfil</a>
+        <hr>
+        <a href="../html/inicio-index.html">Salir</a>
+    </aside>
+    <main>
+        
+        <section class="content">
+            <div class="left-side">
+                <aside class="sidebar1">
+                    <div class="profile-pic">
+                        <img src="default-profile.png" alt="Foto de perfil" id="profileImage">
+                        <button onclick="document.getElementById('profileImageInput').click()">Agregar Foto</button>
+                        <input type="file" id="profileImageInput" style="display: none;" onchange="changeProfileImage(event)">
+                    </div>
+                    <ul class="menu">
+                        <li onclick="showSection('info-section')">Información Personal</li>
+                        <li onclick="showSection('phone-section')">Teléfono</li>
+                        <li onclick="showSection('address-section')">Dirección</li>
+                    </ul>
+                </aside>
+            </div>
+            <div class="right-side">
+                <section class="content">
+                    <div id="info-section" class="section">
+                        <h2>Información Personal</h2>
+                        <form id="profile-form">
+                            <div class="form-group">
+                                <label for="nombre">Nombre:</label>
+                                <input type="text" id="nombre" name="nombre" placeholder="Nombre">
+                                <span class="error-message"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="apellido">Apellido:</label>
+                                <input type="text" id="apellido" name="apellido" placeholder="Apellido">
+                                <span class="error-message"></span>
+                            </div>
+                            <button type="submit">Guardar Cambios</button>
+                        </form>
+                    </div>
+                    <div id="phone-section" class="section" style="display: none;">
+                        <h2>Teléfono</h2>
+                        <form id="phone-form">
+                            <div class="form-group">
+                                <label for="telefono">Teléfono:</label>
+                                <input type="tel" id="telefono" name="telefono" placeholder="Teléfono">
+                                <span class="error-message"></span>
+                            </div>
+                            <button type="submit">Guardar Cambios</button>
+                        </form>
+                    </div>
+                    <div id="address-section" class="section" style="display: none;">
+                        <h2>Dirección</h2>
+                        <form id="address-form">
+                            <div class="form-group">
+                                <label for="direccion">Dirección:</label>
+                                <input type="text" id="direccion" name="direccion" placeholder="Dirección">
+                                <span class="error-message"></span>
+                            </div>
+                            <button type="submit">Guardar Cambios</button>
+                        </form>
+                    </div>
+                </section>
+            </div>
+        </section>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+       
+    </main>
+    <footer>
+        <nav class="footer-nav">
+            <a href="#terminos">Términos y Condiciones</a>
+            <a href="#privacidad">Política de Privacidad</a>
+        </nav>
+        <div class="contacto">
+            <p>Gimnasio Universitario</p>
+            <p>Dirección: Calle Falsa 123</p>
+            <p>Teléfono: 555-1234</p>
+            <p>Email: info@gimnasio.com</p>
+        </div>
+    </footer>
+</body>
+</html>

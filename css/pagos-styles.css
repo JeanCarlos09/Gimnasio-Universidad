@@ -1,0 +1,303 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('../imagenes/pagos-img/pagos.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+header {
+    background-color: #252424;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+header .logo img {
+    height: 90px; /* Tamaño del logo ajustado */
+}
+
+header .social-media {
+    display: flex;
+    align-items: center;
+}
+
+header .social-media a img {
+    height: 30px; /* Tamaño ajustado para redes sociales */
+    margin: 0 20px; /* Más separación entre los íconos */
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+header nav a {
+    margin: 0 25px;
+    text-decoration: none;
+    color: white;
+}
+
+header .sidebar-icon {
+    cursor: pointer;
+    color: white;
+    margin-left: 10px;
+}
+
+.sidebar {
+    display: none;
+    background-color: #dad9d9;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 50vh; /* Altura reducida */
+    width: 250px;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.5);
+    padding: 20px;
+    overflow-y: auto;
+    z-index: 1000;
+}
+
+.sidebar .close-btn {
+    font-size: 30px;
+    cursor: pointer;
+    color: black;
+    text-align: right;
+}
+
+.sidebar .user-info {
+    margin-bottom: 20px; /* Espacio adicional debajo de la información del usuario */
+}
+
+.sidebar .user-info p {
+    color: #000000;
+    margin: 5px 0;
+    font-size: 1.2em; /* Tamaño de fuente ajustado */
+}
+
+.sidebar hr {
+    border: 0;
+    height: 1px;
+    background-color: #000000;
+    margin: 10px 0; /* Espacio entre los separadores y los enlaces */
+}
+
+.sidebar a {
+    display: block;
+    margin: 20px 0; /* Más espacio entre los enlaces del sidebar */
+    text-decoration: none;
+    color: black;
+    font-size: 1.2em; /* Tamaño de letra ajustado para los botones de acceso rápido */
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+.custom-select {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+}
+
+.custom-select:hover {
+    background-color: #f0f0f0;
+}
+
+.custom-select:focus {
+    outline: none;
+    border-color: #000000;
+}
+
+.form-section {
+    margin-bottom: 20px;
+  }
+
+  .payment-option {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .payment-option img {
+    margin-left: 10px;
+    height: 20px;
+  }
+
+  .payment-method-label {
+    margin-left: 5px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+.pag{
+    padding: 0;
+    background-color: aqua;
+}  
+
+.container {
+    margin-top: 20px;
+    display: flex; /* Utilizamos flexbox para alinear los divs horizontalmente */
+    width: 100%; /* Ancho completo de la página */
+}
+
+.parte {
+     /* Cada div ocupa la mitad del ancho de la página */
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho */
+    padding: 20px; /* Espacio interno para visualización */
+}
+
+/* Estilos adicionales para visualización */
+.izquierda {
+    color: #000000;
+    width: 120%;
+    background-color: rgba(133, 133, 133, 0.907); /* Color de fondo para visualización */
+    display: flex;
+    padding: 20px; /* Aumentar padding */
+}
+
+.derecha {
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+label {
+    font-weight: bold; /* Negrita */
+    margin-bottom: 5px; /* Margen inferior */
+}
+
+button {
+    display: block; /* Mostrar como bloque */
+    width: 100%; /* Ancho completo */
+    padding: 10px; /* Relleno interior */
+    background-color: #187703; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Radio de borde */
+    cursor: pointer; /* Cursor de puntero */
+  }
+  
+  /* Estilos para el botón de envío al pasar el ratón */
+  button:hover {
+    background-color: #17eb04; /* Cambiar color de fondo al pasar el ratón */
+  }
+
+
+/* Estilos para Historial de Transacciones */
+.historial-transacciones {
+    margin-bottom: 20px;
+}
+
+.historial-transacciones table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.historial-transacciones th, .historial-transacciones td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.historial-transacciones th {
+    background-color: #000000;
+}
+
+/* Estilos para Recibos y Comprobantes */
+/* Estilos para Recibos y Comprobantes */
+.recibos-comprobantes table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.recibos-comprobantes th, .recibos-comprobantes td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.recibos-comprobantes th {
+    background-color: #000000;
+}
+
+.recibos-comprobantes td a {
+    color: blue;
+    text-decoration: underline;
+}
+
+
+tr{
+    background-color: rgba(133, 133, 133, 0.907);
+}
+
+
+
+
+  footer {
+    background-color: #252424;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer nav.footer-nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer .contacto p {
+    margin: 5px 0;
+}
+
+
+/* -------------------------------------------------------------------------------------------- */
+.form-group {
+    margin-bottom: 20px; /* Margen inferior */
+  }
+
+
+.tarj{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.izquierda img {
+    padding-right: 5px;
+    width: 430px;
+    border-radius: 5px;
+}
+
+.izquierda ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.izquierda ul h6{
+    margin: 0;
+    padding: 3px;
+}
+
+.izquierda, ul , .text{
+    text-align: center;
+}
+
+
+
+

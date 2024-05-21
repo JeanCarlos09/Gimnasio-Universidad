@@ -1,0 +1,118 @@
+/* Estilos generales del cuerpo del documento */
+body {
+    background-image: url("../imagenes/inicio-img/3.jpg"); /* Fondo de imagen */
+    background-size: cover; /* Cubre todo el fondo */
+    background-repeat: no-repeat; /* No se repite */
+    background-position: center; /* Centrado */
+    font-family: Arial, sans-serif; /* Fuente del texto */
+    margin: 0; /* Sin margen */
+    padding: 0; /* Sin relleno */
+  }
+  
+  /* Estilos para el contenedor principal */
+  .container {
+    max-width: 400px; /* Ancho máximo */
+    margin: 50px auto; /* Margen superior e inferior automático */
+    padding: 20px; /* Relleno */
+    border-radius: 20px; /* Bordes redondeados */
+    background-color: #fff; /* Color de fondo */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+  }
+
+  h1{
+    font-family: 'Times New Roman', Times, serif; /* Fuente del encabezado */
+  }
+  
+  /* Estilos para el icono en el encabezado */
+  .icono {
+    position: absolute; /* Posición absoluta */
+    top: 74px; /* Posicionamiento superior */
+    right: 520px; /* Posicionamiento derecho */
+    width: 60px; /* Ancho */
+    height: 20 px; /* Alto */
+    object-fit: cover; /* Ajuste del objeto */
+  }
+  
+  /* Estilos para los elementos del formulario */
+  .form-group {
+    margin-bottom: 20px; /* Margen inferior */
+  }
+  
+  /* Estilos para las etiquetas del formulario */
+  label {
+    display: block; /* Mostrar en bloque */
+    font-weight: bold; /* Negrita */
+    margin-bottom: 5px; /* Margen inferior */
+  }
+  
+  /* Estilos para los campos de entrada del formulario */
+  input {
+    width: 100%; /* Ancho completo */
+    padding: 10px; /* Relleno */
+    border: 1px solid #8d8c8c; /* Borde */
+    border-radius: 4px; /* Bordes redondeados */
+    box-sizing: border-box; /* Tamaño de caja de borde */
+  }
+  
+  /* Estilos para los mensajes de error */
+  .error-message {
+    color: red; /* Color rojo */
+    font-size: 14px; /* Tamaño de fuente */
+    margin-top: 5px; /* Margen superior */
+  }
+  
+  /* Estilos para el botón de envío */
+  button {
+    display: block; /* Mostrar en bloque */
+    width: 100%; /* Ancho completo */
+    padding: 10px; /* Relleno */
+    background-color: #990000; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor apuntador */
+  }
+  
+  /* Estilos para el botón de envío al pasar el ratón */
+  button:hover {
+    background-color: #ff0000; /* Cambio de color de fondo al pasar el ratón */
+  }
+
+
+
+/* Estilos para las opciones adicionales */
+.options {
+  display: flex; /* Utilizamos flexbox para alinear los elementos */
+  justify-content: space-between; /* Distribuimos los elementos a lo largo del contenedor */
+  align-items: center; /* Alineamos los elementos verticalmente al centro */
+  margin-bottom: 10px; /* Margen inferior */
+}
+
+.options label {
+  display: flex; /* Utilizamos flexbox para alinear el checkbox y el texto horizontalmente */
+  align-items: center; /* Alineamos los elementos verticalmente al centro */
+  font-weight: normal; /* Peso normal de la fuente */
+}
+
+.options label input {
+  margin-right: 5px; /* Margen derecho entre el checkbox y el texto */
+}
+
+/* Estilos específicos para el enlace "¿Olvidaste tu contraseña?" */
+.password-link {
+  text-align: right; /* Alineación a la derecha */
+}
+
+.signup-link {
+  text-align: center; /* Alineación centrada */
+  margin-top: 10px;
+}
+
+.signup-link a {
+  color: #007bff; /* Color del enlace */
+  text-decoration: none; /* Sin subrayado */
+}
+
+.signup-link a:hover {
+  text-decoration: underline; /* Subrayado al pasar el ratón */
+}
